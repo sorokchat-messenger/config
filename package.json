@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "tsc": "tsc",
+    "build": "tsc",
     "test": "vitest run"
   },
   "devDependencies": {
