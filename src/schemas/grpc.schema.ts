@@ -5,7 +5,7 @@ import { PortSchema } from "./port.schema.js";
 export const GrpcConnectionSchema = z
   .object({
     GRPC_HOST: HostSchema,
-    GRPC_PORT: z.coerce.number().pipe(PortSchema),
+    GRPC_PORT: PortSchema,
   })
   .transform(({ GRPC_HOST, GRPC_PORT }) => ({
     host: GRPC_HOST,
